@@ -13,7 +13,7 @@ public class StoreViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     public var selectedImage: String?
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         if let img = self.selectedImage {
@@ -25,17 +25,17 @@ public class StoreViewController: UIViewController {
 
     }
 
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.hidesBarsOnTap = true
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.hidesBarsOnTap = false
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

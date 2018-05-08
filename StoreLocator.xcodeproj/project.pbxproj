@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		02FF59BA20A2335A00855A3F /* StoreLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FF59B820A2335A00855A3F /* StoreLocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02FF59C420A2347F00855A3F /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF59C220A2347F00855A3F /* StoreViewController.swift */; };
+		02FF59C520A2347F00855A3F /* StoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FF59C320A2347F00855A3F /* StoreViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02FF59B520A2335A00855A3F /* StoreLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StoreLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		02FF59B820A2335A00855A3F /* StoreLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreLocator.h; sourceTree = "<group>"; };
 		02FF59B920A2335A00855A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02FF59C220A2347F00855A3F /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		02FF59C320A2347F00855A3F /* StoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				02FF59B820A2335A00855A3F /* StoreLocator.h */,
 				02FF59B920A2335A00855A3F /* Info.plist */,
+				02FF59C220A2347F00855A3F /* StoreViewController.swift */,
+				02FF59C320A2347F00855A3F /* StoreViewController.xib */,
 			);
 			path = StoreLocator;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					02FF59B420A2335A00855A3F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02FF59C520A2347F00855A3F /* StoreViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02FF59C420A2347F00855A3F /* StoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 		02FF59BE20A2335A00855A3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +275,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ct.StoreLocator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +284,7 @@
 		02FF59BF20A2335A00855A3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

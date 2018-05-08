@@ -8,10 +8,10 @@
 
 import UIKit
 
-class StoreViewController: UIViewController {
+public class StoreViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    var selectedImage: String?
+    public var selectedImage: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()

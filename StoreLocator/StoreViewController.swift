@@ -10,14 +10,14 @@ import UIKit
 
 public class StoreViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var anImageView: UIImageView!
     public var selectedImage: String?
 
     override public func viewDidLoad() {
         super.viewDidLoad()
 
         if let img = self.selectedImage {
-            imageView.image = UIImage(named: img)
+            anImageView.image = UIImage(named: img)
             self.title = img
         }
 

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		02FF59BA20A2335A00855A3F /* StoreLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FF59B820A2335A00855A3F /* StoreLocator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02FF59C420A2347F00855A3F /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FF59C220A2347F00855A3F /* StoreViewController.swift */; };
-		02FF59C520A2347F00855A3F /* StoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FF59C320A2347F00855A3F /* StoreViewController.xib */; };
+		02FF59CB20A333A300855A3F /* StoreLocator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02FF59CA20A333A300855A3F /* StoreLocator.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,7 +17,7 @@
 		02FF59B820A2335A00855A3F /* StoreLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreLocator.h; sourceTree = "<group>"; };
 		02FF59B920A2335A00855A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02FF59C220A2347F00855A3F /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
-		02FF59C320A2347F00855A3F /* StoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreViewController.xib; sourceTree = "<group>"; };
+		02FF59CA20A333A300855A3F /* StoreLocator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreLocator.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 				02FF59B820A2335A00855A3F /* StoreLocator.h */,
 				02FF59B920A2335A00855A3F /* Info.plist */,
 				02FF59C220A2347F00855A3F /* StoreViewController.swift */,
-				02FF59C320A2347F00855A3F /* StoreViewController.xib */,
+				02FF59CA20A333A300855A3F /* StoreLocator.storyboard */,
 			);
 			path = StoreLocator;
 			sourceTree = "<group>";
@@ -128,7 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02FF59C520A2347F00855A3F /* StoreViewController.xib in Resources */,
+				02FF59CB20A333A300855A3F /* StoreLocator.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

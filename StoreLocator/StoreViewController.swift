@@ -7,34 +7,23 @@
 //
 
 import UIKit
+import Alamofire
 
-public class StoreViewController: UIViewController {
+public class StoreViewController: UITableViewController {
 
-    @IBOutlet weak var anImageView: UIImageView!
-    public var selectedImage: String?
+    public var searchTerm: String?
 
     override public func viewDidLoad() {
         super.viewDidLoad()
 
-        if let img = self.selectedImage {
-            anImageView.image = UIImage(named: img)
-            self.title = img
+        if let st = self.searchTerm {
+            print("Search term \(st)")
         }
 
         self.navigationItem.largeTitleDisplayMode = .never
 
     }
 
-    override public func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.hidesBarsOnTap = true
-    }
-    
-    override public func viewWillDisappear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.hidesBarsOnTap = false
-    }
-    
     override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

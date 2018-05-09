@@ -32,7 +32,7 @@ public class StoreViewController: UITableViewController {
                     /*print(xs)*/
                     for x in xs {
                         if let name = x["name"] {
-                            storeList.append(name)
+                            self.storeList.append(name)
                         }
                     }
                     self.tableView.reloadData()

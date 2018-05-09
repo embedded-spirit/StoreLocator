@@ -11,16 +11,27 @@ import Alamofire
 
 public class StoreViewController: UITableViewController {
 
+    let storeLocatorURL = "https://stagemapi.cantire.net/mobile/sg/search?app_version=6.8&datetime=2018-5-9T11%3A45%3A18&device_type=ios&group_list=Canadian%2BTire%2BStore&locale=en_CA&model_type=iPhone7,2&os_version=11.3&page_size=25&query=M2n7c6"
     public var searchTerm: String?
 
     override public func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.largeTitleDisplayMode = .never
 
         if let st = self.searchTerm {
-            print("Search term \(st)")
+
+            print("Search term is \(st)")
+
+            Alamofire.request(storeSearchURL).responseJSON { response in
+
+                if let json = response.result.value as? [String:Any] {
+                    print(json)
+                }
+
+            }
         }
 
-        self.navigationItem.largeTitleDisplayMode = .never
+        self.title = "Select store"
 
     }
 

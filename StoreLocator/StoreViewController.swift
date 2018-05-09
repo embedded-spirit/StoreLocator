@@ -29,10 +29,12 @@ public class StoreViewController: UITableViewController {
                 if let json = response.result.value as? [String:Any],
                    let res = json["responsecollection"] as? [String:Any],
                    let xs = res["responses"] as? [[String:String]] {
-                    print(xs)
-                    /*for x in xs {*/
-                        /*storeList.append(x["name"])*/
-                    /*}*/
+                    /*print(xs)*/
+                    for x in xs {
+                        if let name = x["name"] {
+                            storeList.append(name)
+                        }
+                    }
                     self.tableView.reloadData()
                 }
             }

@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
+                    <connections>
+                        <outlet property="anImageView" destination="RqO-bI-fz6" id="UDJ-TD-2SI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQr-a2-pyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
